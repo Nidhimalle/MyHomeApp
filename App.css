@@ -1,0 +1,92 @@
+/* Overall page styling */
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #ff6f91, #ff9671, #f9f871);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* App logo styling */
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.7));
+}
+
+/* App logo animation for motion preference */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s ease-in-out;
+  }
+}
+
+/* Keyframes for logo spinning animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* App header styling */
+.App-header {
+  background: radial-gradient(circle, #282c34 20%, #1e2a38 80%);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: #ffffff;
+  max-width: 90%;
+}
+
+/* App link styling with hover effects */
+.App-link {
+  color: #ffde59;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.App-link:hover {
+  color: #ff6f91;
+  transform: scale(1.1);
+  text-shadow: 0px 0px 10px #ffde59;
+}
+
+/* Added shadow for text and increased font size */
+h1, h2, h3 {
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+  color: #ffde59;
+}
+
+/* Button styling for interactive elements */
+button {
+  background: linear-gradient(45deg, #ff6f91, #ff9671);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #ff9671, #f9f871);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
